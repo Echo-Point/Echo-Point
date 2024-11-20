@@ -1,7 +1,7 @@
 {
-  "name": "surfdoge",
-  "version": "4.4.13",
-  "description": "",
+  "name": "echo-point-02847569",
+  "version": "0.1",
+  "description": "A copy of doge unblocker, just changed some stuff for it.",
   "type": "module",
   "engines": {
     "npm": ">=7.0.0",
@@ -11,7 +11,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "EchoPoint",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@cypress/request": "^3.0.0",
