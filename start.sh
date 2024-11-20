@@ -20,18 +20,18 @@ YELLOW="\e[1;33m"
 BLUE="\e[1;34m"
 RESET="\e[0m"
 
-print_bold_with_outline "Welcome to Doge V4, user!"
+print_bold_with_outline "Welcome to Echo Point, user!"
 
 if ! command -v git > /dev/null; then
     echo -e "${RED}[Error] Git is not installed. Please install Git and try again.${RESET}"
     exit 1
 fi
 
-echo -e "${BLUE}[1/4] Cloning Doge Unblocker repository...${RESET}"
-if git clone https://github.com/DogeNetwork/v4 > /dev/null 2>&1; then
+echo -e "${BLUE}[1/4] Cloning Echo Point repository...${RESET}"
+if git clone https://github.com/Echo-point/echo-point > /dev/null 2>&1; then
     echo -e "${GREEN}[Success] Repository cloned successfully.${RESET}"
 else
-    echo -e "${RED}[Error] Failed to clone repository. Please check your network connection, or see if the v4 folder already exists.${RESET}"
+    echo -e "${RED}[Error] Failed to clone repository. Please check your network connection, or see if the echo-point folder already exists.${RESET}"
     exit 1
 fi
 
@@ -45,14 +45,14 @@ else
     exit 1
 fi
 
-echo -e "${BLUE}[3/4] Starting Doge Unblocker...${RESET}"
+echo -e "${BLUE}[3/4] Starting Echo Point...${RESET}"
 npm start
 
 if [ $? -eq 0 ]; then
-    echo -e "${GREEN}[Success] Doge Unblocker started successfully.${RESET}"
-    echo -e "${YELLOW}[Info] You can access Doge V4 via localhost.${RESET}"
+    echo -e "${GREEN}[Success] Echo Point started successfully.${RESET}"
+    echo -e "${YELLOW}[Info] You can access Echo Point via localhost.${RESET}"
 else
-    echo -e "${RED}[Error] Failed to start Doge Unblocker. Please check the application logs for details.${RESET}"
+    echo -e "${RED}[Error] Failed to start Echo Point. Please check the application logs for details.${RESET}"
     exit 1
 fi
 
